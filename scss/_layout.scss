@@ -133,7 +133,7 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  background: linear-gradient(rgba($color-black, .8), rgba($color-black, .6)),url(../images/bg.jpeg) center no-repeat;
+  background: linear-gradient(rgba($color-black, .8), rgba($color-black, .6)), url(../images/bg.jpeg) center no-repeat;
   background-size: cover;
 
   .brand {
@@ -149,6 +149,10 @@
   &-banner {
     text-align: center;
     @include centering(50%);
+
+    @media(max-width: 640px) {
+      top: 63%;
+    }
   }
 }
 
@@ -160,6 +164,11 @@
   @media(max-width: 900px) {
     height: 70vh;
   }
+
+  @media (max-width: 640px) {
+    height: 115vh;
+  }
+
 
   &-left {
     width: 40%;

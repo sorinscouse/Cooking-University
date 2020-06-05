@@ -132,6 +132,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 640px) {
+      .header-banner {
+        top: 63%; } }
 
 .about-us {
   height: 100vh;
@@ -140,6 +143,9 @@ body {
   @media (max-width: 900px) {
     .about-us {
       height: 70vh; } }
+  @media (max-width: 640px) {
+    .about-us {
+      height: 115vh; } }
   .about-us-left {
     width: 40%;
     position: relative;
